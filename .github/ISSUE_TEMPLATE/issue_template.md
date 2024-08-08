@@ -1,7 +1,7 @@
 ---
 name: 신규 기능 추가
 about: 이슈 템플릿
-title: [Doing] title
+title: '[Doing] title'
 labels: tracking issue, needs triage
 assignees: hyeonju01
 ---
