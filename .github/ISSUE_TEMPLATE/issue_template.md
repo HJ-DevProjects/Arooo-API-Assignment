@@ -1,10 +1,9 @@
 ---
-name: 우리만의 이슈 템플릿
-about: 작고 소중한 이슈 템플릿
-title: ''
-labels: bug
-assignees: GREENOVER
-
+name: 신규 기능 추가
+about: 이슈 템플릿
+title: [Doing] title
+labels: tracking issue, needs triage
+assignees: hyeonju01
 ---
 
 ## 💡 어떤 기능인가요?
