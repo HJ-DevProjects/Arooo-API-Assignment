@@ -1,10 +1,10 @@
-package com.arooo.testapi;
+package com.arooo.webapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestApiApplicationTests {
+class WebAPIBackApplicationTests {
 
     @Test
     void contextLoads() {

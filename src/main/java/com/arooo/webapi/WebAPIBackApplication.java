@@ -1,13 +1,13 @@
-package com.arooo.testapi;
+package com.arooo.webapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestApiApplication {
+public class WebAPIBackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TestApiApplication.class, args);
+        SpringApplication.run(WebAPIBackApplication.class, args);
     }
 
 }
