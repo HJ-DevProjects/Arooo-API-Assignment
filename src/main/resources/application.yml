@@ -1,1 +1,8 @@
-spring.application.name=test-api
+# 서버 설정
+sever:
+  port: 8080
+  servlet:
+    encoding:
+      force-response: true
+  tomcat:
+    uri-encoding: UTF-8
