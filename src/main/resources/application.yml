@@ -6,3 +6,44 @@ sever:
       force-response: true
   tomcat:
     uri-encoding: UTF-8
+    
+
+spring:
+  # jpa 설정
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate:
+        format-sql: true
+        show-sql: true
+  # mvc 설정
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+
+  # DB 설정
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:8080/
+    username: root
+    password: password
+
+#  logging:
+#    level:
+#      root:
+#        DEBUG
+
+springdoc:
+  packages-to-scan: # 컨트롤러 디렉토리명 작성
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui.html # path 설정
+    groups-order: desc
+    operations-sorter: method
+    display-request-duration: true # 요청 시각을 표시
