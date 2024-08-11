@@ -31,7 +31,6 @@ public class LikeEntity {
     private ContentEntity content;
 
     /* Entity 생성 메서드 */
-
     @Builder
     public LikeEntity(ContentEntity content) {
         this.content = content;
