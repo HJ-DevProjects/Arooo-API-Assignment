@@ -9,22 +9,25 @@ sever:
     
 
 spring:
-  # jpa 설정
+  # Thymeleaf Setting ----
+  thymeleaf:
+    cache: false
+  # JPA Setting ----
   jpa:
     hibernate:
-      ddl-auto: create
+#      ddl-auto: create
+       ddl-auto: validate
     show-sql: true
     database-platform: org.hibernate.dialect.MySQLDialect
     properties:
       hibernate:
         format-sql: true
         show-sql: true
-  # mvc 설정
+  # MVC Setting ----
   mvc:
     path match:
       matching-strategy: ant_path_matcher
-
-  # DB 설정
+  # DB Setting ----
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:8080/

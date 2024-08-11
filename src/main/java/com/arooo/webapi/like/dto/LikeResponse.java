@@ -1,12 +1,18 @@
 package com.arooo.webapi.like.dto;
 
 import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@RequiredArgsConstructor
 public class LikeResponse {
-    private Integer likeCount;
+    private Integer likes;
 
     @Builder
-    public LikeResponse(Integer likeCount) {
-        this.likeCount = likeCount;
+    public LikeResponse(Integer likes) {
+        this.likes = likes;
     }
 }

@@ -25,10 +25,10 @@ public class ContentEntity {
     private String mainText;
     @ColumnDefault("0")
     @Column(name = "thumbs_up_count", nullable = false)
-    private Integer likeCount;
+    private Integer likes;
 
     /* count update */
     public void incrementLikeCount() {
-        this.likeCount ++;
+        this.likes ++;
     }
 }

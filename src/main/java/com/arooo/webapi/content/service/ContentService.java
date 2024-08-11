@@ -27,9 +27,10 @@ public class ContentService {
     public ContentResponse getContentDetail(Long contentId) {
         Optional<ContentEntity> content = contentRepository.findById(contentId);
         ContentResponse contentResponse = ContentResponse.builder()
+                                                         .id(content.get().getId())
                                                   .title(content.get().getTitle())
                                                   .mainText(content.get().getMainText())
-                                                  .likeCount(content.get().getLikeCount())
+                                                  .likes(content.get().getLikes())
                                                   .build();
         return contentResponse;
     }

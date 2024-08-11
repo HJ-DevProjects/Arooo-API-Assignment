@@ -28,7 +28,7 @@ public class LikeService {
         contentRepository.save(contentEntity);
 
         likeRepository.save(likeEntity);
-        LikeResponse likeResponse = LikeResponse.builder().likeCount(contentEntity.getLikeCount()).build();
+        LikeResponse likeResponse = LikeResponse.builder().likes(contentEntity.getLikes()).build();
         return likeResponse;
     }
 }
