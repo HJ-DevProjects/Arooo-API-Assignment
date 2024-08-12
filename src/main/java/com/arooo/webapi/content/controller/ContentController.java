@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping("/api/library/content")
+@RequestMapping("/api.a.com/library/content")
 @Slf4j
 @RequiredArgsConstructor
 public class ContentController {
